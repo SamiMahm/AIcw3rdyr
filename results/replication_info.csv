@@ -1,0 +1,6 @@
+seed,train_rows,train_rows_after_IQR,IQR_upper_price,test_rows,test_rows_after_IQR,no_IQR:gamma,no_IQR:learning_rate,no_IQR:max_depth,no_IQR:n_estimators,no_IQR:subsample,IQR_train:gamma,IQR_train:learning_rate,IQR_train:max_depth,IQR_train:n_estimators,IQR_train:subsample
+42,17290,16367,1132950,4323,4107,0,0.1,5,200,0.8,0,0.1,5,200,0.8
+0,17290,16361,1132500,4323,4113,0,0.1,5,200,0.8,0,0.1,5,200,0.8
+1,17290,16374,1116625,4323,4073,0,0.1,5,200,0.8,0,0.1,5,200,0.8
+2,17290,16378,1129425,4323,4089,0,0.1,5,200,0.8,0,0.1,5,200,0.8
+3,17290,16373,1131112,4323,4101,0,0.1,5,200,0.8,0,0.1,5,200,0.8

@@ -1,0 +1,23 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\hline
+Model & Random & House & Temporal & Spatial \\
+\hline
+\multicolumn{5}{l}{\textit{Baselines}} \\
+\quad Median & 42.6$\pm$0.3 & 42.8$\pm$0.9 & 40.5$\pm$0.0 & 40.1$\pm$4.6 \\
+\quad Linear regression & 25.6$\pm$0.3 & 25.5$\pm$0.4 & 25.0$\pm$0.0 & 27.9$\pm$6.5 \\
+\hline
+\multicolumn{5}{l}{\textit{Symbolic}} \\
+\quad Zipcode \$/sqft & 18.7$\pm$0.2 & 18.7$\pm$0.3 & 18.5$\pm$0.0 & 25.8$\pm$1.9 \\
+\quad + adjustment grid & 18.5$\pm$0.2 & 18.5$\pm$0.2 & 18.3$\pm$0.0 & 25.5$\pm$2.1 \\
+\hline
+\multicolumn{5}{l}{\textit{ML}} \\
+\quad Random Forest & 13.0$\pm$0.1 & 12.8$\pm$0.3 & 13.4$\pm$0.0 & 14.8$\pm$1.8 \\
+\quad XGBoost & 12.7$\pm$0.1 & 12.6$\pm$0.2 & 13.1$\pm$0.0 & 14.8$\pm$1.4 \\
+\quad XGBoost, log target & 12.1$\pm$0.1 & 12.0$\pm$0.2 & 13.0$\pm$0.0 & \textbf{13.8$\pm$0.6} \\
+\hline
+\multicolumn{5}{l}{\textit{Hybrid}} \\
+\quad Rule as feature & \textbf{12.0$\pm$0.1} & \textbf{11.9$\pm$0.2} & \textbf{13.0$\pm$0.0} & 15.6$\pm$1.0 \\
+\quad Residual & 12.1$\pm$0.1 & 12.1$\pm$0.2 & 13.2$\pm$0.0 & 20.4$\pm$1.6 \\
+\hline
+\end{tabular}

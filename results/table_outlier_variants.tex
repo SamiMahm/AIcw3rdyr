@@ -1,0 +1,13 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrr}
+\hline
+Setting & RMSE (\$k) & $R^2$ & MAPE (\%) \\
+\hline
+No outlier removal & 117.2 $\pm$ 4.1 & 0.895 $\pm$ 0.009 & 12.7 \\
+IQR on train only & 213.5 $\pm$ 18.0 & 0.654 $\pm$ 0.035 & 13.1 \\
+IQR on train \& test & 73.6 $\pm$ 1.8 & 0.876 $\pm$ 0.006 & 11.9 \\
+Leaky (+ price/sqft) & 27.4 $\pm$ 7.9 & 0.994 $\pm$ 0.004 & 1.5 \\
+\hline
+Leni et al.\ (2025), reported & 139.0 & 0.872 & -- \\
+\hline
+\end{tabular}

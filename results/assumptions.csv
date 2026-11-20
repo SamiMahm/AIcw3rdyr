@@ -1,0 +1,8 @@
+Item,Paper,Our choice,Reason
+Split type and seed,Not reported,"Random 80/20; seeds 42, 0, 1, 2, 3",Common default; seeds show variance
+IQR outlier rule,"IQR method, details not given",1.5 x IQR on price; 3 readings tested,Find which reproduces the paper
+Zipcode encoding,Not stated,Numeric,Replicates the most likely choice; tested later
+Target transform,None mentioned,Raw price,As in the paper
+Final XGBoost settings,Ranges only (Table 1),"GridSearchCV, 5-fold, RMSE",Recovers settings from the stated grid
+RF / DT / LR settings,Not reported,scikit-learn defaults,No other information
+price_per_sqft as input,Ambiguous,Excluded; tested separately,It is computed from the target

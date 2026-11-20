@@ -1,0 +1,21 @@
+,value
+rows,21613
+unique house ids,21436
+extra rows from repeat sales,177
+houses sold 2+ times,176
+rows belonging to a repeat-sold house,353
+missing values (all columns),0
+first sale,2014-05-02
+last sale,2015-05-27
+price skewness,4.024
+log(price) skewness,0.428
+median price ($),450000
+mean price ($),540088
+unique zipcodes,70
+"Spearman corr(zipcode number, median price)",-0.039
+most distant numerically-adjacent pair,"98019 -> 98022: 58 km apart, median $401k vs $280k"
+rows where sqft_living == sqft_above + sqft_basement,21613 / 21613
+"corr(log price, log price_per_sqft)",0.608
+houses with yr_renovated > 0,914
+negative house_age (sold before built),12
+sqft_living15 differs from sqft_living,88.1% of rows
