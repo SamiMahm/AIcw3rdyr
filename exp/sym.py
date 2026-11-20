@@ -80,7 +80,7 @@ if __name__ == "__main__":
     rows = []
     for scheme in SPLITTERS:
         for seed in C.SEEDS:
-            tr, te = make_split(df, scheme, seed)
+            tr, te = make_split(df, scheme, seed)  # splitb
             train, test = df.iloc[tr], df.iloc[te]
             # Two versions: base rule only, and base rule + adjustments
             for name, factors in [("Rules: zipcode $/sqft only", ()),
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     )[["scheme", "model", "MAE", "R2", "MAPE", "fallback"]]
         .to_string(index=False))
 
-    # Save the full rulebook from one fit, to show it is human-readable
+    # Save the full rulebook from one fit 
     tr, _ = make_split(df, "random", C.SEED)
     book = RuleValuer().fit(df.iloc[tr][cols],
                             df.iloc[tr][C.TARGET]).rulebook()

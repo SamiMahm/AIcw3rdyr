@@ -48,7 +48,7 @@ def apply():
         "pdf.fonttype": 42,           
     })
 
-
+#voor de save
 def save(fig, path):
     fig.savefig(path)
     plt.close(fig)
